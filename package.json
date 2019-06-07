@@ -1,0 +1,17 @@
+{
+  "name": "template-comparison",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "glob": "^7.1.4",
+    "handlebars": "^4.1.2",
+    "liquidjs": "^8.2.3",
+    "tty-table": "^2.7.0"
+  }
+}

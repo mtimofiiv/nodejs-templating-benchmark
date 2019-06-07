@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>{{page_title}}</title>
+  </head>
+  <body>
+    <h1>{{page_title}}</h1>
+
+    {{>page_content}}
+
+    {{#each arrayOfStuff}}
+      <p>{{this}}</p>
+    {{/each}}
+
+    {{#each iterativeWithObjects}}
+      <p>{{this.color}}</p>
+    {{/each}}
+  </body>
+</html>
