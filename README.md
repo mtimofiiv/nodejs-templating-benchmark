@@ -12,7 +12,18 @@ Not yet, I'm working on it. Wanna test another different engine, a language feat
 
 ## Engines
 
-Currently testing:
+Currently tests written for:
 
  * Handlebars
  * Liquid
+
+## The Future
+
+ * Add more templating languages: https://github.com/expressjs/express/wiki
+ * Add more complexity to the benchmarks
+ * Make the tests bigger HTML pages
+ * Maybe test some of the language features individually (like iterations, ifs, etc)
+
+## Results
+
+At the moment, Liquid is beating Handlebars slightly in rendering speed.
