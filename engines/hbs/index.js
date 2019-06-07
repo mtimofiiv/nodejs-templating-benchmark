@@ -8,10 +8,11 @@ exports.prep = async () => {
   const baseTemplate = await loadFile('./engines/hbs/template.hbs')
   const partial = await loadFile('./engines/hbs/partial.hbs')
 
-  return { baseTemplate, partial }
+  Handlebars.registerPartial('page_content', partial)
+
+  return { baseTemplate }
 }
 
-exports.render = ({ baseTemplate, partial }, context) => {
-  Handlebars.registerPartial('page_content', partial)
+exports.render = ({ baseTemplate }, context) => {
   return Handlebars.compile(baseTemplate)(context)
 }
